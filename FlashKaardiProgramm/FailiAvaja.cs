@@ -32,7 +32,7 @@ namespace FlashKaardiProgramm
                     Console.WriteLine("Millega on tegemist?");
                     string vastus = Console.ReadLine();
 
-                    if (vastus.ToLower() == Path.GetFileNameWithoutExtension(failid[randomIndex]).ToLower())
+                    if (vastus.ToLower() == Path.GetFileNameWithoutExtension(failid[randomIndex]).ToLower() || vastus.ToLower() == "skip")
                     {
                         Console.WriteLine("Õige");
                         Thread.Sleep(500);
